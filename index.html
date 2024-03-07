@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Minha Lista de Tarefas</h2>
+        <form action="tarefas.php" method="post">
+            <input type="text" name="tarefa" placeholder="Digite sua tarefa" required>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+        <h3>Tarefas:</h3>
+        <ul>
+            <?php include 'tarefas.php'; ?>
+        </ul>
+    </div>
+</body>
+</html>
